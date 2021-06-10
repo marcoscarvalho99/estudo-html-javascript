@@ -1,0 +1,30 @@
+body {
+	background-color: black;
+	font: normal 15pt Arial;
+}
+head {
+}
+section {
+	text-align: center;
+	background-color: white;
+	padding: 15px;
+	border-radius: 10px;
+	width: 500px;
+	margin: auto;
+	color: black;
+	box-shadow: rgb(100, 15, 96) 3px 3px;
+}
+footer {
+	text-align: center;
+	margin: auto;
+	color: white;
+}
+
+h1 {
+	background-color: rgba(100, 15, 96, 0.904);
+	color: blanchedalmond;
+	align-content: center;
+	opacity: 0.9;
+	text-align: center;
+	border-radius: 10rem;
+}

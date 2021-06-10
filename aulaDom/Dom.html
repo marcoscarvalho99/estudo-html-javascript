@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aula dom</title>
+
+		<style>
+			div#texto {
+				background-color: aqua;
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+				color: crimson;
+				size: 20px;
+				border: crimson;
+				border-radius: 10pt;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="texto">0</div>
+
+		<script>
+			let valor = 0;
+            //selecionando elemento na arvore dom
+			var v = document.getElementById("texto");
+			//adicionando listernes de acao simples
+            v.addEventListener("click", acao);
+			v.addEventListener("mouseenter", entrou);
+			v.addEventListener("mouseout", saiu);
+			function acao() {
+				valor++;
+
+				if (valor % 2 == 0) {
+					v.innerText = valor.toString() + " par";
+				} else {
+					v.innerText = valor.toString() + " impar";
+				}
+			}
+			function entrou() {
+				v.style.background = "green";
+                v.innerText='entrou click'
+			}
+			function saiu() {
+				v.style.background = "black";
+				v.innerText = "VOCE SAIU";
+			}
+		</script>
+	</body>
+</html>
